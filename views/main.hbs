@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-center flex-column">
+  <h2 class="text-center">{{title}}</h2>
+
+  {{#if listExists}} 
+    <ul class="productos">
+      {{#each products}}
+        <li>{{> producto}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+
+</div>
