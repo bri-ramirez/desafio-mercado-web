@@ -1,6 +1,15 @@
 <div class="card">
-  <img src="{{image}}" class="card-img-top" alt="{{image}}">
+  <img src="{{image}}" class="card-img-top p-3" alt="{{image}}">
   <div class="card-body">
     <h5 class="card-title">{{name}}</h5>
+  </div>
+  <div class="card-footer d-flex justify-content-between">
+    <small class="text-muted">${{price}}</small>
+    <button
+      class="btn btn-success w-25 add-product"
+      data-name="{{name}}"
+      data-price="{{price}}"
+      data-image="{{image}}"
+    >+</button>
   </div>
 </div>

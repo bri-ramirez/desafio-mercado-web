@@ -21,3 +21,34 @@ li {
 .logo {
   margin: auto;
 }
+
+.shopping-car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+}
+
+.shopping-car svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+#shopping-car-products .product {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+}
+
+#shopping-car-products img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}

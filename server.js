@@ -8,27 +8,33 @@ const getProductList = () => {
   return [
     {
       name: 'Banana',
-      image: '/assets/images/banana.png'
+      image: '/assets/images/banana.png',
+      price: 100,
     },
     {
       name: 'Cebolla',
-      image: '/assets/images/cebollas.png'
+      image: '/assets/images/cebollas.png',
+      price: 50,
     },
     {
       name: 'Lechuga',
-      image: '/assets/images/lechuga.png'
+      image: '/assets/images/lechuga.png',
+      price: 70,
     },
     {
       name: 'Papas',
-      image: '/assets/images/papas.png'
+      image: '/assets/images/papas.png',
+      price: 80,
     },
     {
       name: 'Pimenton',
-      image: '/assets/images/pimenton.png'
+      image: '/assets/images/pimenton.png',
+      price: 120,
     },
     {
       name: 'Tomate',
-      image: '/assets/images/tomate.png'
+      image: '/assets/images/tomate.png',
+      price: 90,
     }
   ];
 }
@@ -52,8 +58,7 @@ app.use(express.static('public'));
 
 
 app.get('/', (req, res) => {
-  res.render('main', {
-    title: 'Listado de productos',
+  res.render('dashboard', {
     listExists: true,
     products: getProductList(),
   });
